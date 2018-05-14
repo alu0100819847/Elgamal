@@ -1,6 +1,6 @@
-# Práctica 9: RSA
+# Práctica Optativa: Elgamal Eliptico
 
 ### OBJETIVO
- Implementar el cifrado RSA.
+ Implementar el cifrado de ElGamal Eliptico
 
-[Despliegue](https://alu0100819847.github.io/RSA/)
+[Despliegue](https://alu0100819847.github.io/Elgamal/)
