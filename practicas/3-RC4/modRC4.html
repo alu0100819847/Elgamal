@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seguridad en Sistemas Informáticos</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600">
+  <link rel="stylesheet" type="text/css" href="../../css/jquery.bxslider.css">
+  <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../css/animate.css">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../../css/mystyle.css">
+
+  <script type="text/javascript" src="js/global.js"></script>
+  <script type="text/javascript" src="js/cover.js"></script>
+  <script type="text/javascript" src="js/RC4.js"></script>
+  <script type="text/javascript" src="js/herramientas.js"></script>
+
+</head>
+
+<body>
+
+  <div class="loader"></div>
+  <div id="myDiv">
+    <!--HEADER-->
+    <div class="header">
+      <div class="bg-color">
+        <header id="main-header">
+          <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                <a class="navbar-brand" href="../../index.html">SSI</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" id="Menu">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <div class="wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="banner-info text-center wow fadeIn delay-05s">
+                <h1> MODIFICACIÓN PRÁCTICA CIFRADO DE FLUJO: RC4</h1>
+                <div class="introdatos">
+                <table>
+                  <tr>
+                    <th><div style="padding: 10px 60px;"><h3>Mensaje: </h3></div></th>
+                    <td><input id="original" autofocus onchange="rc4()" placeholder="MENSAJE" size="40"></td>
+                  </tr>
+                  <tr>
+                    <th><div style="padding: 10px 60px;"><h3>Clave: </h3></div></th>
+                    <td><input id="Clave" onchange="rc4()" placeholder="CLAVE" size="40"></td>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <td>
+                      <button class="boton2" onClick="clean()">BORRAR</button>
+                      <button class="boton2" onClick="rc4()">Run</button>
+                    </td>
+                  </tr>
+                </table>
+                <span class="output1" id="error"></span>
+              </div>
+
+                <div class="resultados">
+                <table>
+
+
+                  <tr>
+                    <th>Mensaje:</th>
+                    <td><span class="output" id="intro"></span></td>
+                  </tr>
+                  <tr>
+                    <th>Clave:</th>
+                    <td><span class="output" id="clave"></span></td>
+                  </tr>
+                  <tr>
+                    <th>Salida Numerica:</th>
+                    <td><span class="output" id="salidaNum"></span></td>
+                  </tr>
+                  <tr>
+                    <th>Salida:</th>
+                    <td><span class="output" id="salida"></span></td>
+                  </tr>
+                  <tr>
+                    <th>Caracteres no imprimibles</th>
+                    <td><span class="output" id="noImprimible"></span></td>
+                  </tr>
+
+                </table>
+                </div>
+                <a href="RC4_msj.html" class="mybtn">Mensaje</a>
+                <div class="resultados" id = "resultado">
+                  <table>
+                    <tr><th><h2>Ejemplo 1: </h2></th></tr>
+                    <tr>
+                      <th> Mensaje: </th>
+                      <td id = "m1">162,191,195,139,68,245,242,0,174,248,45,166,22,117,32,165,122,203,179,16,186,36,32,209,189,143,7,95,243,195,36,103</td>
+                    </tr>
+                    <tr>
+                      <th> Clave: </th>
+                      <td id= "k1">108, 117, 110, 97</td>
+                    </tr>
+
+                      <th> Salida: </th>
+                      <td id = "s1">104,111,108,97,32,98,117,101,110,111,115,32,100,105,97,115,32,109,101,32,108,108,97,109,111,32,99,97,114,108,111,115</td>
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <td><button class="boton1" onClick="copia(1)"></button></td>
+                    </tr>
+                </table>
+                <table>
+                </table>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/jquery.easing.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/wow.js"></script>
+  <script src="../../js/jquery.bxslider.min.js"></script>
+  <script src="../../js/custom.js"></script>
+  <script src="../js/menu.js"></script>
+
+
+</body>
+</html>

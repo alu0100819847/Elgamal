@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seguridad en Sistemas Informáticos</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600">
+  <link rel="stylesheet" type="text/css" href="../../css/jquery.bxslider.css">
+  <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../css/animate.css">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../../css/mystyle.css">
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap-grid.css">
+
+
+  <script type="text/javascript" src="js/global.js"></script>
+  <script type="text/javascript" src="js/Elgamal.js"></script>
+  <script type="text/javascript" src="js/Verify.js"></script>
+</head>
+
+<body>
+
+  <div class="loader"></div>
+    <!--HEADER-->
+    <div class="header">
+      <div class="bg-color">
+        <header id="main-header">
+          <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                <a class="navbar-brand" href="../../index.html">SSI</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" id="Menu">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <div class="wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 banner-info text-center wow fadeIn delay-05s">
+                <h1>CIFRADO ELGAMAL ELÍPTICO</h1>
+              </div>
+            </div>
+              <div class= "row justify-content-center">
+                <div class="introdatos col-9 col-lg-6">
+                <table id="introDatos">
+                  <tr>
+                    <th><div style="padding: 10px 10px;"><h3 class= "lab-intro-datos">Mensaje : </h3></div></th>
+                    <td><input id="msj" autofocus onchange="verify(0)" placeholder="Mensaje" size="40"></td>
+                  </tr>
+                  <tr>
+                    <th><div style="padding: 10px 10px;"><h3 class= "lab-intro-datos">p (primo) : </h3></div></th>
+                    <td><input id="p" autofocus onchange="verify(0)" placeholder="5, 7, 11, 13, 17" size="40"></td>
+                  </tr>
+                  <tr>
+                    <th><div style="padding: 10px 10px;"><h3 class= "lab-intro-datos">a (x<sup>3</sup>+ <u>a</u>x+ b) : </h3></div></th>
+                    <td><input id="q" autofocus onchange="verify(0)" placeholder="1, 2, 3" size="40"></td>
+                  </tr>
+                  <tr>
+                    <th><div style="padding: 10px 10px;"><h3 class= "lab-intro-datos">b (x<sup>3</sup>+ ax+ <u>b</u>) : </h3></div></th>
+                    <td><input id="d" autofocus onchange="verify(0)" placeholder="1, 2, 3 ..." size="40"></td>
+                  </tr>
+                  <tr>
+                    <th><div style="padding: 10px 10px;"><h3 class= "lab-intro-datos">d<sub>B</sub> </h3></div></th>
+                    <td><input id="d" autofocus onchange="verify(0)" placeholder="2, 4, 6 ..." size="40"></td>
+                  </tr>
+                  <tr>
+                    <th><div style="padding: 10px 10px;"><h3 class= "lab-intro-datos">a<sub>A</sub> </h3></div></th>
+                    <td><input id="d" autofocus onchange="verify(0)" placeholder="2, 4, 6 ..." size="40"></td>
+                  </tr>
+                  <tr>
+                    <th><div style="padding: 10px 10px;"><h3 class= "lab-intro-datos">Punto </h3></div></th>
+                    <td><input id="d" autofocus onchange="verify(0)" placeholder="x, y" size="40"></td>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <td>
+                      <button class="boton2" onClick="clean()">BORRAR</button>
+                      <button class="boton2" onClick="verify(0)">Run</button>
+                    </td>
+                  </tr>
+                </table>
+                <span class="output1" id="error"></span>
+              </div>
+            </div>
+
+            <div class="resultados">
+            <table id="outDatos">
+              <tr>
+                <th>Mensaje: </th>
+                <td><span class="output" id=""></span></td>
+              </tr>
+
+              <tr>
+                <th>p: </th>
+                <td><span class="output" id=""></span></td>
+              </tr>
+              <tr>
+                <th>a:</th>
+                <td><span class="output" id=""></span></td>
+              </tr>
+              <tr>
+                <th>b:</th>
+                <td><span class="output" id=""></span></td>
+              </tr>
+              <tr>
+                <th>d<sub>B</sub></th>
+                <td><span class="output" id=""></span></td>
+              </tr>
+              <tr>
+                <th>a<sub>A</sub></th>
+                <td><span class="output" id=""></span></td>
+              </tr>
+              <tr>
+                <th>Salida X:</th>
+                <td><span class="output" id=""></span></td>
+              </tr>
+              <tr>
+                <th>Salida Y:</th>
+                <td><span class="output" id=""></span></td>
+              </tr>
+
+            </table>
+            </div>
+
+              <div class="row justify-content-center">
+
+                <div class="col-4 col-lg-2">
+                  <a href="modGenerador.html" class="mybtn">Modificación</a>
+                </div>
+              </div>
+              <div id="Ejemplos">
+
+                <div>
+                </div>
+              </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+  </div>
+
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/jquery.easing.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/wow.js"></script>
+  <script src="../../js/jquery.bxslider.min.js"></script>
+  <script src="../../js/custom.js"></script>
+  <script type="text/javascript" src="../js/menu.js"></script>
+  <script type="text/javascript" src="js/herramientas.js"></script>
+
+</body>
+</html>

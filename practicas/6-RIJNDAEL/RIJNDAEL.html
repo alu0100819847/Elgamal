@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seguridad en Sistemas Informáticos</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600">
+  <link rel="stylesheet" type="text/css" href="../../css/jquery.bxslider.css">
+  <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../css/animate.css">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../../css/mystyle.css">
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap-grid.css">
+
+
+  <script type="text/javascript" src="js/global.js"></script>
+  <script type="text/javascript" src="js/aes.js"></script>
+
+</head>
+
+<body>
+
+  <div class="loader"></div>
+    <!--HEADER-->
+    <div class="header">
+      <div class="bg-color">
+        <header id="main-header">
+          <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                <a class="navbar-brand" href="../../index.html">SSI</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" id="Menu">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <div class="wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 banner-info text-center wow fadeIn delay-05s">
+                <h1>RIJNDAEL (CANCELADA)</h1>
+              </div>
+            </div>
+              <div class= "row justify-content-center">
+                <div class="introdatos col-9 col-lg-6">
+                <table id="introDatos">
+                  <tr>
+                    <th><div ><h3 class= "lab-intro-datos">Mensaje:  </h3></div></th>
+                    <td><input id="key1" autofocus onchange="aes()" placeholder="Key 25b" size="40"></td>
+                  </tr>
+                  <tr>
+                    <th><div><h3 class= "lab-intro-datos">Key: </h3></div></th>
+                    <td><input id="key2" autofocus onchange="aes()" placeholder="Key 31b" size="40"></td>
+                  </tr>
+
+                  <tr>
+                    <th></th>
+                    <td>
+                      <button class="boton2" onClick="clean()">BORRAR</button>
+                      <button class="boton2" onClick="aes()">Run</button>
+                    </td>
+                  </tr>
+                </table>
+                <span class="output1" id="error"></span>
+              </div>
+            </div>
+
+            <div class="resultados">
+            <table id="outDatos">
+
+
+              <tr>
+                <th>Key 1:</th>
+                <td><span class="output" id="ek1"></span></td>
+              </tr>
+              <tr>
+                <th>Key 2:</th>
+                <td><span class="output" id="ek2"></span></td>
+              </tr>
+              <tr>
+                <th>Key 3:</th>
+                <td><span class="output" id="ek3"></span></td>
+              </tr>
+              <tr>
+                <th>Key 4:</th>
+                <td><span class="output" id="ek4"></span></td>
+              </tr>
+              <tr>
+                <th>Semilla R1:</th>
+                <td><span class="output" id="eR1"></span></td>
+              </tr>
+              <tr>
+                <th>nº Bits de salida:</th>
+                <td><span class="output" id="enb"></span></td>
+              </tr>
+              <tr>
+                <th>Bits de salida:</th>
+                <td><span class="output" id="esal"></span></td>
+              </tr>
+
+            </table>
+            </div>
+
+              <div class="row justify-content-center">
+
+                <div class="col-4 col-lg-2">
+                  <a href="modGenerador.html" class="mybtn">Modificación</a>
+                </div>
+              </div>
+              <div id="Ejemplos">
+
+                <div>
+                </div>
+              </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+  </div>
+
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/jquery.easing.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/wow.js"></script>
+  <script src="../../js/jquery.bxslider.min.js"></script>
+  <script src="../../js/custom.js"></script>
+  <script type="text/javascript" src="../js/menu.js"></script>
+  <script type="text/javascript" src="js/herramientas.js"></script>
+
+</body>
+</html>

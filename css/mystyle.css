@@ -1,0 +1,117 @@
+
+.resultados{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+  background-color: #e6e3e330;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  /* IMPORTANTE */
+	display: flex;
+  justify-content: center;
+	color: white;
+}
+.mybtn{
+	background-color: #ff5b0aa8;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #fff;
+	border: 0;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	padding: 10px 30px;
+	border-radius: 60px;
+	outline: none !important;
+	backface-visibility: hidden;
+	transition: all 0.3s;
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	user-select: none;
+	background-image: none;
+}
+
+.output{
+	margin: 20px   30px;
+}
+.introdatos{
+	font-family: 'Roboto', sans-serif;
+	display: inline-block;
+	text-align: center;
+	padding: 20px;
+}
+.entradas{
+	color: white;
+}
+.boton1{
+	text-decoration: none;
+padding: 10px;
+font-weight: 600;
+font-size: 20px;
+color: #ffffff;
+background-color: #1883ba4f;
+border-radius: 6px;
+border: 2px solid #2331927a;
+float: right;
+}
+
+.boton2{
+	text-decoration: none;
+padding: 10px;
+font-weight: 600;
+font-size: 10px;
+color: #ffffff;
+background-color: #ff5b0aa8;
+border-radius: 6px;
+border: 2px solid #2331927a;
+float: right;
+}
+.boton3{
+	text-decoration: none;
+padding: 10px;
+font-weight: 600;
+font-size: 10px;
+color: #ffffff;
+background-color: #1883ba4f;
+border-radius: 6px;
+border: 2px solid #2331927a;
+float: right;
+}
+.output1 {
+	color: red;
+}
+
+.navbar-brand-active {
+    color: #be9e21;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+		margin-left: -15px;
+		font-size: 24px;
+    text-transform: uppercase;
+    padding: 15px 0px;
+    margin-top: 6px;
+		float: left;
+    height: 50px;
+
+    line-height: 20px;
+
+    text-decoration: none;
+		background-color: transparent;
+
+    box-sizing: border-box;
+
+    letter-spacing: 0.5px;
+}
+
+.lab-intro-datos{
+	color: white;
+
+	margin-top: 0px;
+	    margin-bottom: 0px;
+			padding: 10px;
+}
